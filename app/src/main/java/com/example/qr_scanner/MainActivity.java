@@ -38,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
    public static TextView Result;
    public static EditText text;
 
-   public static final String URL ="https://192.168.1.250/";
-
+   //Google Sheets//
+   // public static final String URL ="https://script.google.com/macros/s/AKfycbxLQGSmN9S6eOiWrfnFYn2P4OHiDmCVP0JpKiKKD95KWBNrsicJ/exec";
+    //Server
+    public static final String URL = "http://1234image.000webhostapp.com/pictures/";
    private static final int CAMERA_REQUEST_CODE = 2828;
 
    String CameraPermission[];
@@ -62,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         ScanButton = findViewById(R.id.Scanbutton);
         Result = findViewById(R.id.Result);
         sendData = findViewById(R.id.sendData);
+
+       // sendData.setVisibility(View.INVISIBLE);
 
 
         //Start Scanning
@@ -127,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     public void SendData()
     {
 
-        new PostData(text.getText().toString()).execute();
+        new PostData(Result.getText().toString()).execute();
 
 
     }
@@ -155,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
             try{
 
             ArrayList<NameValuePair> dataToSend = new ArrayList<>();
-            dataToSend.add(new BasicNameValuePair("data",data));
+            dataToSend.add(new BasicNameValuePair("sdata",data));
 
             HttpParams httpRequestParams = getHttpRequestParams();
 

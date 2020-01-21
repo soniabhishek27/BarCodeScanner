@@ -24,7 +24,8 @@
         android:layout_centerInParent="true"
         android:layout_above="@id/Scanbutton"
         android:textSize="20dp"
-        android:text="RESULT"
+        android:hint="Details will be displayed here"
+        android:text="Testing"
 
         android:id="@+id/Result"
 

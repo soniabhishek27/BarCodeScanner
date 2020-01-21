@@ -28,6 +28,7 @@ public class ScanCodeActivity extends AppCompatActivity implements ZXingScannerV
     public void handleResult(Result result) {
 
         MainActivity.Result.setText(result.getText());
+        MainActivity.sendData.setVisibility(View.VISIBLE);
         //MainActivity.sendData.setVisibility(View.VISIBLE);
 
         //com.example.qr_scanner.Result.output.setText(result.getText());
