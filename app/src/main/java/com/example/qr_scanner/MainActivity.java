@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
    public static TextView Result;
    public static EditText text;
 
-   public static final String URL ="https://192.168.1.250/";
+   public static final String URL ="ENTER THE SERVER URL";
 
    private static final int CAMERA_REQUEST_CODE = 2828;
 
