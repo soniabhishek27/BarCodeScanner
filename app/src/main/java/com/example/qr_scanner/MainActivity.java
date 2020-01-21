@@ -38,15 +38,10 @@ public class MainActivity extends AppCompatActivity {
    public static TextView Result;
    public static EditText text;
 
-<<<<<<< HEAD
-   //Google Sheets//
-   // public static final String URL ="https://script.google.com/macros/s/AKfycbxLQGSmN9S6eOiWrfnFYn2P4OHiDmCVP0JpKiKKD95KWBNrsicJ/exec";
-    //Server
-    public static final String URL = "http://1234image.000webhostapp.com/pictures/";
-=======
+
    public static final String URL ="ENTER THE SERVER URL";
 
->>>>>>> 4d4ef2504e9e15eb22524ed20fec0aad2388d148
+
    private static final int CAMERA_REQUEST_CODE = 2828;
 
    String CameraPermission[];
